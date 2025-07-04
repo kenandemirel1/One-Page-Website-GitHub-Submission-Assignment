@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenan Demirel | Tech Innovator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <span class="highlight">TU</span>Tech
+            </div>
+            <nav>
+                <a href="#main" class="nav-link">Home</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#connect" class="nav-link">Connect</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="intro">
+            <div class="glitch-wrapper">
+                <h1 class="glitch" data-text="Talha Uzkan">Kenan Demirel</h1>
+            </div>
+            <p class="subtitle">Pushing the boundaries of technology</p>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="work" class="work">
+            <h2>Innovation Portfolio</h2>
+            <div class="work-grid">
+                <div class="work-item">
+                    <div class="work-content">
+                        <h3>AI Solutions</h3>
+                        <p>Developing cutting-edge artificial intelligence systems</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-content">
+                        <h3>Web Development</h3>
+                        <p>Creating responsive and dynamic web applications</p>
+                    </div>
+                </div>
+                <div class="work-item">
+                    <div class="work-content">
+                        <h3>System Architecture</h3>
+                        <p>Designing scalable and efficient systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="connect" class="connect">
+            <div class="connect-container">
+                <h2>Let's Connect</h2>
+                <div class="contact-methods">
+                    <a href="mailto:Kenan Demirel@my-aolcc.com" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>Kenan Demirel@my-aolcc.com</span>
+                    </a>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Kenan Demirel. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom cursor effect
+        const cursor = document.querySelector('.cursor');
+        const cursorFollower = document.querySelector('.cursor-follower');
+
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            
+            setTimeout(() => {
+                cursorFollower.style.left = e.clientX + 'px';
+                cursorFollower.style.top = e.clientY + 'px';
+            }, 100);
+        });
+    </script>
+</body>
+</html> 
